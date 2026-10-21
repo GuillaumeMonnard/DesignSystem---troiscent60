@@ -97,3 +97,11 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+#img1 {
+  height: 17.54169rem;
+  align-self: end;
+  grid-row: 6 / span 1;
+  grid-column: 7 / span 6;
+  justify-self: stretch;
+}
