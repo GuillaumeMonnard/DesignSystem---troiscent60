@@ -2,10 +2,11 @@
 @import "base";
 @import "layout";
 @import "./modules/colors";
-@import "detail-article";
+@import "./modules/detail-article";
 
 body {
   padding: 50px;
+  background-color: var(--white-900);
 }
 
 .druk {
