@@ -237,6 +237,22 @@
   flex-shrink: 0;
   align-self: stretch;
 }
+.layout5-card-container {
+  display: flex;
+  width: 80.84375rem;
+  height: 64.22919rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9375rem;
+}
+.layout5-card {
+  display: flex;
+  padding: 0.625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
 
 // faire une balise img pour le -> justify-self: stretch;
 // et faire gaff les images sont full étiré
