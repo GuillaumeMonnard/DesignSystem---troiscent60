@@ -1,0 +1,14 @@
+.nav-title {
+  color: var(--black-800);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+  align-self: self-start;
+
+  /* nav/title */
+  font-family: "Druk Condensed Trial";
+  font-size: 9.6875rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 0.96325rem; /* 9.943% */
+  text-transform: uppercase;
+}
