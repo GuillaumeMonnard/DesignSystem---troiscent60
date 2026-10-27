@@ -8,6 +8,36 @@
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+#layout3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8.125rem;
+  align-self: stretch;
+}
+
+.layout3-container {
+  display: flex;
+  height: 28.03519rem;
+  align-items: center;
+  gap: 3.9375rem;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.9375rem;
+}
+
+#rectangle7 {
+  width: 6.5rem;
+  transform: scaleX(-1);
+  align-self: stretch;
+}
+
 .hero {
   align-self: stretch;
   justify-self: MIN;
@@ -92,6 +122,20 @@
   /* article/title-small */
   font-family: "Druk Condensed Trial";
   font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.big-title {
+  overflow: hidden;
+  color: var(--black-800, #242424);
+  text-overflow: ellipsis;
+
+  /* article/title-big */
+  font-family: "Druk Condensed Trial";
+  font-size: var(--article-title-big, 9.375rem);
   font-style: normal;
   font-weight: 900;
   line-height: normal;
