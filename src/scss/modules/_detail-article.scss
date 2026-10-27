@@ -5,25 +5,21 @@ h1 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  width: 62.77213rem;
-  height: 55.8125rem;
   font-size: 18.75rem;
 }
-body {
-  display: flex;
-  width: 93.5rem;
-  padding: 3.125rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 6.25rem;
-}
+
 .header-article {
   display: flex;
   align-items: flex-start;
   gap: 3.125rem;
   align-self: stretch;
 }
+
+.header-article h1 {
+  width: 62.77213rem;
+  height: 55.8125rem;
+}
+
 .article-info-container {
   display: flex;
   width: 21.375rem;
@@ -41,7 +37,7 @@ body {
   font-family: "Ferro Italic II";
   font-size: 1.875rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
 .article-content {
@@ -53,7 +49,7 @@ body {
   /* article/body */
   font-size: 1.875rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   width: 58.5rem;
   text-align: left;
@@ -101,7 +97,7 @@ body {
   font-family: "Ferro Italic II";
   font-size: 3.125rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   width: 38.05663rem;
 }
@@ -115,7 +111,7 @@ body {
   font-family: "Ferro Regular I";
   font-size: 1.875rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   width: 36.5625rem;
 }
