@@ -2,7 +2,8 @@ nav {
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 5rem;
-  align-content: center;
+  row-gap: 8rem; /* espace entre les deux sections */
+  align-content: center; /* remplace space-evenly */
   align-items: start;
   width: 100%;
   height: 100vh;
@@ -18,7 +19,7 @@ nav {
   font-size: 9.6875rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 0.96325rem; /* 9.943% */
+  line-height: 1; /* au lieu de 0.96325rem */
   text-transform: uppercase;
 }
 
@@ -33,12 +34,13 @@ nav {
   color: var(--black-800);
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
+
   /* nav/subtitle */
   font-family: "Ferro Italic II";
   font-size: 4.8125rem;
   font-style: italic;
   font-weight: 400;
-  line-height: 0.48163rem; /* 10.008% */
+  line-height: 1; /* au lieu de 0.48163rem */
   text-transform: capitalize;
 }
 
