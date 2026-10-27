@@ -73,7 +73,60 @@ body {
   align-self: stretch;
 }
 
+.card {
+  display: flex;
+  width: 43.6875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9375rem;
+  align-self: stretch;
+}
+
+.texts-card {
+  display: flex;
+  padding: 2.875rem 4.8125rem 3.25rem 2.3125rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.4375rem;
+  align-self: stretch;
+}
+
+.card h3 {
+  color: var(--black-800);
+  leading-trim: both;
+  text-edge: cap;
+
+  /* article/subtitle */
+  font-family: "Ferro Italic II";
+  font-size: 3.125rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  width: 38.05663rem;
+}
+
+.card p {
+  color: var(--black-800);
+  leading-trim: both;
+  text-edge: cap;
+
+  /* article/body */
+  font-family: "Ferro Regular I";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 36.5625rem;
+}
+
 #page-article-rectangle1 {
-  width: 200px;
-  height: 200px;
+  height: 22.5rem;
+  align-self: stretch;
+}
+
+.card-article-img {
+  background: url("../assets/img-articles/GINO-1-NF.webp") lightgray 50% / cover
+    no-repeat;
+  flex: 1 0 0;
+  align-self: stretch;
 }
