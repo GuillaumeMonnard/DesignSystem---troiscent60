@@ -228,15 +228,17 @@
   object-fit: cover;
 }
 
-#img1-layout5 {
-  width: 37.4375rem;
-  height: 18.28475rem;
-}
-#img2-layout5 {
-  width: 40.84375rem;
-  height: 18.28475rem;
-}
 //
+
+.hero-layout5 {
+  display: flex;
+  height: 18.875rem;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-shrink: 0;
+  align-self: stretch;
+}
 .layout5-content-container {
   display: flex;
   flex-direction: row;
@@ -249,7 +251,7 @@
   display: grid;
   /* 2 colonnes égales : gauche / droite */
   grid-template-columns: 1fr 1fr;
-  gap: 0.9375rem;
+  gap: 1.9375rem;
   align-items: start;
 }
 
@@ -259,7 +261,7 @@
 
 /* Les titres de ce layout : plus petits que le .big-title par défaut */
 #layout5 .layout5-title {
-  font-size: 6.25rem;
+  font-size: 9.375rem;
   line-height: 0.95;
   font-weight: 500;
   display: block;
