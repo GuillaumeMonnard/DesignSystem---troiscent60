@@ -1,0 +1,63 @@
+.newsletter {
+  display: flex;
+  width: 88.0625rem;
+  height: 34.5rem;
+  padding: 3.9375rem 2.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  background: var(--black-800);
+}
+
+.newsletter h3 {
+  color: var(--white-900);
+
+  /* form/title */
+  font-family: "Ferro Italic II";
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.newsletter .separator {
+  width: 60rem;
+  height: 0.1rem;
+  background: var(--white-900);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+input {
+  display: flex;
+  width: 25.5rem;
+  height: 2.5rem;
+  padding: 0.625rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--white-900);
+}
+
+button {
+  display: flex;
+  padding: 0.625rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--white-900);
+  background: var(--accent);
+
+  /* button/label */
+  font-family: "Druk";
+  font-size: 3.5625rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
