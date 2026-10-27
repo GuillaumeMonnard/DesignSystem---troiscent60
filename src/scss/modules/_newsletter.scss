@@ -26,3 +26,38 @@
   height: 0.1rem;
   background: var(--white-900);
 }
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+input {
+  display: flex;
+  width: 25.5rem;
+  height: 2.5rem;
+  padding: 0.625rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--white-900);
+}
+
+button {
+  display: flex;
+  padding: 0.625rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  color: var(--white-900);
+  background: var(--accent);
+
+  /* button/label */
+  font-family: "Druk";
+  font-size: 3.5625rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
