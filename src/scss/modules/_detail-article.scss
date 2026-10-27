@@ -6,7 +6,7 @@ h1 {
   line-height: normal;
   width: 62.77213rem;
   height: 55.8125rem;
-  font-size: var(--page-title, 18.75rem);
+  font-size: 18.75rem;
 }
 body {
   display: flex;
@@ -31,26 +31,26 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background: var(--black-800, #242424);
+  background: var(--black-800);
 }
 
 .header-article p {
-  color: var(--white-100, #f7f6f2);
+  color: var(--white-900);
   /* faq/text */
   font-family: "Ferro Italic II";
-  font-size: var(--faq-text, 1.875rem);
+  font-size: 1.875rem;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
 }
 .article-content {
   font-family: "Ferro Regular I";
-  color: var(--black-800, #242424);
+  color: var(--black-800);
   leading-trim: both;
   text-edge: cap;
 
   /* article/body */
-  font-size: var(--article-body, 1.875rem);
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
