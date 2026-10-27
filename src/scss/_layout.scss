@@ -297,7 +297,7 @@
   gap: 1.5rem;
 }
 
-.layout5-cards-container {
+.card-big-title-container {
   flex: 1;
   display: grid;
   /* 2 colonnes égales : gauche / droite */
@@ -319,14 +319,14 @@
 }
 
 /* Images : prennent toute la largeur de leur colonne */
-#layout5 .card-big-title img {
+.card-big-title img {
   width: 100%;
   height: 18.28475rem;
   object-fit: cover;
   display: block;
 }
 
-#layout5 .card-big-title p {
+.card-big-title p {
   font-family: "Ferro Regular II";
   font-size: 1.5625rem;
   line-height: 1.2;
