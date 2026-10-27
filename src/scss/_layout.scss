@@ -227,6 +227,22 @@
   object-fit: cover;
 }
 
+#img1-layout5 {
+  display: flex;
+  width: 37.4375rem;
+  height: 18.28475rem;
+  align-items: center;
+  gap: 0.625rem;
+}
+#img2-layout5 {
+  display: flex;
+  width: 40.84375rem;
+  height: 18.28475rem;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.625rem;
+}
+
 // layout 5
 .hero-layout5 {
   display: flex;
