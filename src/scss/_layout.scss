@@ -25,6 +25,16 @@
   align-self: stretch;
 }
 
+#layout5 {
+  display: flex;
+  height: 88.8125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  align-self: stretch;
+}
+
 .layout3-container {
   display: flex;
   height: 28.03519rem;
@@ -115,6 +125,11 @@
 
 #rectangle7 {
   width: 6.5rem;
+  align-self: stretch;
+}
+#layout5-rectangle1 {
+  width: 6.5rem;
+  flex: 1 0 0;
   align-self: stretch;
 }
 
@@ -211,5 +226,17 @@
   justify-self: stretch;
   object-fit: cover;
 }
+
+// layout 5
+.hero-layout5 {
+  display: flex;
+  height: 17.875rem;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
 // faire une balise img pour le -> justify-self: stretch;
 // et faire gaff les images sont full étiré
