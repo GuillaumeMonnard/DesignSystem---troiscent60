@@ -49,3 +49,50 @@
   align-items: flex-start;
   gap: 2rem;
 }
+
+#nav-header {
+  display: flex;
+  width: 88.25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#img-nav {
+  width: 13.9375rem;
+  height: 4.491rem;
+}
+
+#menu-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5rem;
+}
+
+#switch-mode {
+  display: flex;
+  align-items: center;
+  gap: 1.1875rem;
+  font-family: "Ferro Italic II";
+  font-size: var(--faq-text, 1.875rem);
+  font-weight: 400;
+}
+
+.switch-dark {
+  color: var(--black-800-50, rgba(36, 36, 36, 0.5));
+}
+
+.switch-light {
+  color: var(--black-800, #242424);
+}
+
+.button-nav {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: inherit;
+}

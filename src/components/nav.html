@@ -1,21 +1,31 @@
-<nav>
-  <div class="nav-container">
-    <h2 class="nav-title">Rubriques</h2>
-    <div class="nav-links-container">
-      <a href="#" class="nav-link">Économie</a>
-      <a href="#" class="nav-link">Politique</a>
-      <a href="#" class="nav-link">Écologie</a>
-      <a href="#" class="nav-link">Culture</a>
-      <a href="#" class="nav-link">Enquêtes</a>
-      <a href="#" class="nav-link">Travail</a>
-      <a href="#" class="nav-link">Logement</a>
+<nav id="nav-header">
+  <a href="#">
+    <!-- faire le lien pour la home page -->
+    <img
+      id="img-nav"
+      src="/src/assets/logo/logo-header-NB.png"
+      alt="logo trois cent 60"
+    />
+  </a>
+  <div id="menu-nav">
+    <div id="switch-mode">
+      <button class="button-nav"><p class="switch-dark">nuit</p></button>
+      <button class="button-nav"><p class="switch-light">jour</p></button>
     </div>
-  </div>
-  <div class="nav-container">
-    <h2 class="nav-title">Contact</h2>
-    <div class="nav-links-container">
-      <a href="#" class="nav-link">À propos</a>
-      <a href="#" class="nav-link">Nous rejoindre</a>
-    </div>
+    <button class="button-nav">
+      <div id="burger-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="76"
+          height="68"
+          viewBox="0 0 76 68"
+          fill="none"
+        >
+          <path d="M0 13.4524V0H75.3333V13.4524H0Z" fill="#242424" />
+          <path d="M0 40.4524V27H75.3333V40.4524H0Z" fill="#242424" />
+          <path d="M0 67.4524V54H75.3333V67.4524H0Z" fill="#242424" />
+        </svg>
+      </div>
+    </button>
   </div>
 </nav>
