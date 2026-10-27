@@ -1,0 +1,43 @@
+#header-home-page {
+  display: flex;
+  width: 88.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9375rem;
+}
+
+#img-header-home-page {
+  display: flex;
+  width: 88.25rem;
+  height: 36.4375rem;
+  padding-bottom: 2.10031rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#legende-container-header-home-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.legende {
+  color: var(--black-800, #242424);
+  font-family: "Ferro Italic II";
+  font-size: var(--faq-text, 1.875rem);
+  font-weight: 400;
+}
+
+#legende-header-home-page-1 {
+  max-width: 36.22394rem;
+}
+
+.legende-header-home-page-2 {
+  text-align: right;
+}
+
+#legende-droite-header-home-page {
+  display: flex;
+  flex-direction: column;
+}
