@@ -17,6 +17,14 @@
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+#layout4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.125rem;
+  align-self: stretch;
+}
+
 .hero {
   align-self: stretch;
   justify-self: MIN;
@@ -47,6 +55,10 @@
 #hero3 {
   grid-row: 1 / span 1;
   grid-column: 3 / span 4;
+}
+
+#hero5 {
+  display: -webkit-box;
 }
 
 #rectangle1,
@@ -84,6 +96,12 @@
 #rectangle6 {
   grid-row: 4 / span 3;
   grid-column: 5 / span 2;
+}
+
+#rectangle8 {
+  width: 6.5rem;
+  height: 38.6875rem;
+  flex-shrink: 0;
 }
 
 .noir {
