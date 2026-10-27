@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 3.125rem;
-  align-self: stretch;
+  align-self: self-start;
 }
 
 #layout3 {
@@ -46,6 +46,29 @@
   justify-content: center;
   align-items: flex-start;
   gap: auto;
+}
+
+#reels-container {
+  display: flex;
+  gap: 1.875rem;
+  align-items: stretch;
+}
+
+#reels-content {
+  display: flex;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.reel-card {
+  display: flex;
+  height: 100%;
+  width: 21.8125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 1.875rem;
 }
 
 .hero {
@@ -81,8 +104,6 @@
 }
 
 #hero5 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
 }
 
 #hero4 {
@@ -229,6 +250,13 @@
   grid-column: 8 / span 4;
   justify-self: stretch;
   object-fit: cover;
+}
+.reel-img {
+  width: 100%;
+  height: 100%;
+}
+.reel-svg {
+  position: absolute;
 }
 // faire une balise img pour le -> justify-self: stretch;
 // et faire gaff les images sont full étiré
