@@ -422,6 +422,13 @@
     justify-self: MIN;
   }
 
+  #hero3 {
+    align-self: MIN;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    justify-self: MIN;
+  }
+
   #img1 {
     display: flex;
     align-items: center;
