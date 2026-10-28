@@ -30,8 +30,8 @@
 
 details {
   font-family: "Ferro Italic II";
-  color: var(--white-900);
-  background-color: var(--black-800);
+  color: var(--bg);
+  background-color: var(--text);
   font-size: 1.875rem;
   font-style: italic;
   font-weight: 400;
@@ -86,8 +86,8 @@ details[open] summary::after {
 details p {
   padding: 1rem;
   margin: 0;
-  background-color: var(--black-800);
-  color: var(--white-900);
+  background-color: var(--text);
+  color: var(--bg);
 
   max-width: 80%; /* largeur du bloc de texte */
   margin: 0 auto; /* centre le bloc dans le volet */
