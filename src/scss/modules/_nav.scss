@@ -85,14 +85,9 @@
 
 #nav-header {
   display: flex;
-  width: 88.25rem;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-}
-
-#img-nav {
-  width: 13.9375rem;
-  height: 4.491rem;
 }
 
 #menu-nav {
@@ -130,6 +125,11 @@
   color: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+#burger-menu {
+  width: 4.70831rem;
+  height: 4.21575rem;
 }
 
 @media (max-width: 578px) {
@@ -182,6 +182,20 @@
 
   .nav-links-container {
     align-items: center;
+    gap: 2rem;
+  }
+
+  #switch-mode {
+    font-size: 1.25rem;
+  }
+
+  #burger-menu {
+    width: 3.09375rem;
+    height: 2.77013rem;
+    flex-shrink: 0;
+  }
+
+  #menu-nav {
     gap: 2rem;
   }
 }
