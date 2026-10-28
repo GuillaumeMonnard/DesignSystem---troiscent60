@@ -127,6 +127,6 @@ h1 {
   align-self: stretch;
 }
 
-@media (max-width: 402px) {
-  background-color: yellow;
+@media (min-width: 360px) and (max-width: 578px) {
+  background-color: red;
 }
