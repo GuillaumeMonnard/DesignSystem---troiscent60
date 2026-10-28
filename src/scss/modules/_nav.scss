@@ -6,6 +6,24 @@
   align-content: center;
   align-items: start;
   width: 100%;
+
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  padding: 8rem 4rem 4rem;
+  background-color: var(--white-900);
+  overflow-y: auto;
+
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3 ease;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .nav-title {
@@ -153,4 +171,19 @@
     gap: 2rem;
     align-self: stretch;
   }
+.close-overlay {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+
+  /* même reset que ton .button-nav */
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: var(--black-800);
+  font-size: 3rem;
+  line-height: 1;
+  cursor: pointer;
 }
