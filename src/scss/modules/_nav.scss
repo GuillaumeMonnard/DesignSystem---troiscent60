@@ -115,11 +115,62 @@
   outline: inherit;
 }
 
-.close-overlay {
-  position: absolute;
-  top: 2rem;
-  right: 4rem;
+@media (min-width: 402px) {
+  .overlay {
+    display: flex;
+    width: 25.125rem;
+    padding: 2.5rem 0.625rem 0.625rem 0.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.4375rem;
+    width: 100%;
+  }
 
+  .nav-title {
+    text-align: center;
+    font-size: var(--nav-title, 6.375rem);
+    font-weight: 900;
+    line-height: 0.96325rem; /* 15.11% */
+  }
+
+  .nav-container {
+    display: flex;
+    width: 23.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.875rem;
+  }
+
+  .nav-link {
+    font-size: var(--nav-subtitle, 1.75rem);
+    line-height: 0.48163rem; /* 27.522% */
+  }
+
+  .nav-links-container {
+    display: flex;
+    height: 10.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    align-self: stretch;
+  }
+  .close-overlay {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+
+    /* même reset que ton .button-nav */
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: var(--black-800);
+    font-size: 3rem;
+    line-height: 1;
+    cursor: pointer;
+  }
   /* même reset que ton .button-nav */
   background: none;
   border: none;
