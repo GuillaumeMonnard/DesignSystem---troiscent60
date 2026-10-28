@@ -26,7 +26,14 @@
   }
 }
 
-// Règle de base (tous les écrans)
+#logo {
+  color: var(--text);
+}
+
+.logo-mono {
+  display: none;
+}
+
 .close-overlay {
   position: absolute;
   top: 2rem;
@@ -132,6 +139,16 @@
     row-gap: 4.4375rem;
     padding: 2.5rem 0.625rem 0.625rem;
     box-sizing: border-box;
+  }
+
+  .logo-full {
+    display: none;
+  }
+
+  .logo-mono {
+    display: block;
+    width: 3rem;
+    height: auto;
   }
 
   #nav-header {
