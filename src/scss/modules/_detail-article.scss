@@ -141,7 +141,7 @@ h1 {
     padding: 0.625rem;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: start;
     gap: 0.625rem;
   }
   .header-article h1 {
@@ -151,7 +151,8 @@ h1 {
   }
   .article-info-container {
     padding: 0.625rem;
-    justify-content: center;
+    justify-content: start;
+    align-items: start;
     height: 5.9375rem;
     gap: 0.62rem;
   }
@@ -164,5 +165,33 @@ h1 {
     font-size: 1.25rem;
     leading-trim: both;
     text-edge: cap;
+  }
+  .article-content p {
+    color: var(--black-800, #242424);
+    leading-trim: both;
+    text-edge: cap;
+
+    /* article/body */
+    font-family: "Ferro Test";
+    font-size: var(--article-body, 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .article-content h3 {
+    font-size: 1.25rem;
+  }
+  .article-gino {
+    width: 23.875rem;
+    height: 8.71rem;
+  }
+
+  .texts-card {
+    display: flex;
+    padding: 0.625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    align-self: stretch;
   }
 }
