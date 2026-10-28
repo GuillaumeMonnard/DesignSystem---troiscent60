@@ -237,7 +237,7 @@
   font-family: "Druk";
   font-size: 3.125rem;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
 }
@@ -351,3 +351,34 @@
 }
 // faire une balise img pour le -> justify-self: stretch;
 // et faire gaff les images sont full étiré;
+
+@media (max-width: 578px) {
+  #layout1 {
+    height: 54.625rem;
+    row-gap: 0.625rem;
+    column-gap: 10px;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #layout2 {
+    width: 23.875rem;
+    height: 54.625rem;
+    row-gap: 0.625rem;
+    column-gap: 10px;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero {
+    font-size: 8.625rem;
+  }
+
+  .small-title {
+    font-size: 2.1875rem;
+  }
+
+  .big-title {
+    font-size: 3.875rem;
+  }
+}
