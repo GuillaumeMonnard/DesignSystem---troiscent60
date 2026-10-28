@@ -43,8 +43,6 @@ h1 {
 .article-content {
   font-family: "Ferro Regular I";
   color: var(--black-800);
-  leading-trim: both;
-  text-edge: cap;
 
   /* article/body */
   font-size: 1.875rem;
@@ -90,8 +88,6 @@ h1 {
 
 .card h3 {
   color: var(--black-800);
-  leading-trim: both;
-  text-edge: cap;
 
   /* article/subtitle */
   font-family: "Ferro Italic II";
@@ -104,8 +100,6 @@ h1 {
 
 .card p {
   color: var(--black-800);
-  leading-trim: both;
-  text-edge: cap;
 
   /* article/body */
   font-family: "Ferro Regular I";
@@ -131,4 +125,8 @@ h1 {
 #page-article-rectangle2 {
   height: 9.1875rem;
   align-self: stretch;
+}
+
+@media (max-width: 402px) {
+  background-color: yellow;
 }
