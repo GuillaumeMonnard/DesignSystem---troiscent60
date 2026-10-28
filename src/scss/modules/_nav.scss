@@ -115,7 +115,7 @@
   outline: inherit;
 }
 
-@media (min-width: 402px) {
+@media (max-width: 402px) {
   .overlay {
     display: flex;
     width: 25.125rem;
@@ -172,13 +172,4 @@
     cursor: pointer;
   }
   /* même reset que ton .button-nav */
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  color: var(--text);
-  font-size: 3rem;
-  line-height: 1;
-  cursor: pointer;
 }
