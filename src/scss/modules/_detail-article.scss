@@ -163,20 +163,9 @@ h1 {
   .article-hashtag p,
   .article-info-author p {
     font-size: 1.25rem;
-    leading-trim: both;
-    text-edge: cap;
   }
   .article-content p {
-    color: var(--black-800, #242424);
-    leading-trim: both;
-    text-edge: cap;
-
-    /* article/body */
-    font-family: "Ferro Test";
-    font-size: var(--article-body, 1rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-size: 1rem;
   }
   .article-content h3 {
     font-size: 1.25rem;
