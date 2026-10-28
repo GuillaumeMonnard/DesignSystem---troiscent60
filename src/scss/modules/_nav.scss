@@ -117,7 +117,7 @@
   outline: inherit;
 }
 
-@media (min-width: 402px) {
+@media (max-width: 402px) {
   .overlay {
     display: flex;
     width: 25.125rem;
