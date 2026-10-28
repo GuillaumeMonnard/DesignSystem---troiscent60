@@ -9,11 +9,11 @@
   justify-content: center;
   align-items: center;
   gap: 3.5rem;
-  background: var(--black-800);
+  background: var(--text);
 }
 
 .newsletter h3 {
-  color: var(--white-900);
+  color: var(--bg);
 
   /* form/title */
   font-family: "Ferro Italic II";
@@ -26,7 +26,7 @@
 .newsletter .separator {
   width: 60rem;
   height: 0.1rem;
-  background: var(--white-900);
+  background: var(--bg);
 }
 
 form {
@@ -45,7 +45,7 @@ input {
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
-  background: var(--white-900);
+  background: var(--bg);
 }
 
 button {
@@ -54,7 +54,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
-  color: var(--white-900);
+  color: var(--bg);
   background: var(--accent);
 
   /* button/label */

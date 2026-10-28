@@ -93,7 +93,7 @@
 .hero {
   align-self: stretch;
   justify-self: MIN;
-  color: var(--black-800);
+  color: var(--text);
   text-align: center;
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
@@ -186,7 +186,7 @@
 }
 
 .noir {
-  background-color: var(--black-800);
+  background-color: var(--text);
 }
 
 .rouge {
@@ -203,7 +203,7 @@
   align-self: stretch;
   justify-self: start;
 
-  color: var(--black-800);
+  color: var(--text);
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
 
@@ -231,7 +231,7 @@
 }
 
 .small-title {
-  color: var(--black-800);
+  color: var(--text);
 
   /* article/title-small */
   font-family: "Druk";
@@ -243,7 +243,7 @@
 }
 
 .big-title {
-  color: var(--black-800);
+  color: var(--text);
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
 
