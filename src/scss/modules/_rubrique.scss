@@ -26,3 +26,8 @@
   grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-auto-flow: row;
 }
+
+#page-rubrique-rectangle2 {
+  height: 9.1875rem;
+  align-self: stretch;
+}
