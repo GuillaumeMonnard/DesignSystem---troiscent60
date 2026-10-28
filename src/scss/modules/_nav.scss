@@ -26,6 +26,23 @@
   }
 }
 
+// Règle de base (tous les écrans)
+.close-overlay {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: var(--text);
+  font-size: 3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .nav-title {
   color: var(--text);
   text-box-trim: trim-both;
@@ -156,20 +173,5 @@
     align-items: center;
     gap: 2rem;
     align-self: stretch;
-  }
-  .close-overlay {
-    position: absolute;
-    top: 2rem;
-    right: 4rem;
-
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font: inherit;
-    color: var(--text);
-    font-size: 3rem;
-    line-height: 1;
-    cursor: pointer;
   }
 }
