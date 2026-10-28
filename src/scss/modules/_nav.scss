@@ -96,3 +96,58 @@
   cursor: pointer;
   outline: inherit;
 }
+
+@media (min-width: 402px) {
+  .overlay {
+    display: flex;
+    width: 25.125rem;
+    padding: 2.5rem 0.625rem 0.625rem 0.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.4375rem;
+    width: 100%;
+  }
+
+  .nav-title {
+    color: var(--black-800);
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+
+    /* nav/title */
+    font-family: "Druk";
+    font-size: 9.6875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .nav-container {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+    align-items: start;
+  }
+
+  .nav-link {
+    color: var(--black-800);
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+
+    /* nav/subtitle */
+    font-family: "Ferro Italic II";
+    font-size: 4.8125rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: capitalize;
+  }
+
+  .nav-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
