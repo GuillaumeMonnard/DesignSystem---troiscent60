@@ -128,4 +128,37 @@ h1 {
 }
 
 @media (min-width: 360px) and (max-width: 578px) {
+  .header-article {
+    display: flex;
+    flex-direction: column;
+    width: 23.875rem;
+    padding: 0.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+  .header-article h1 {
+    width: 23.875rem;
+    height: 12.9375rem;
+    font-size: var(--page-title, 6.125rem);
+  }
+  .article-info-container {
+    width: 23.875rem;
+    padding: 0.625rem;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+  .article-hashtag,
+  .article-info-author {
+    display: flex;
+  }
+  .article-hashtag p,
+  .article-info-author p {
+    font-size: 1.25rem;
+  }
 }
