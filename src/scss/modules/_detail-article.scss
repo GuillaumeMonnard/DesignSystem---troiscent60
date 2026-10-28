@@ -132,3 +132,55 @@ h1 {
   height: 9.1875rem;
   align-self: stretch;
 }
+
+@media (min-width: 360px) and (max-width: 578px) {
+  .header-article {
+    display: flex;
+    flex-direction: column;
+    width: 23.875rem;
+    padding: 0.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.625rem;
+  }
+  .header-article h1 {
+    width: 23.875rem;
+    height: 12.9375rem;
+    font-size: 6.125rem;
+  }
+  .article-info-container {
+    padding: 0.625rem;
+    justify-content: start;
+    align-items: start;
+    height: 5.9375rem;
+    gap: 0.62rem;
+  }
+  .article-hashtag,
+  .article-info-author {
+    display: flex;
+  }
+  .article-hashtag p,
+  .article-info-author p {
+    font-size: 1.25rem;
+  }
+  .article-content p {
+    font-size: 1rem;
+  }
+  .article-content h3 {
+    font-size: 1.25rem;
+  }
+  .article-gino {
+    width: 23.875rem;
+    height: 8.71rem;
+  }
+
+  .texts-card {
+    display: flex;
+    padding: 0.625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    align-self: stretch;
+  }
+}
