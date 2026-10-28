@@ -3,4 +3,23 @@
   --text-light: #24242450;
   --accent: #da3231;
   --bg: #f7f6f2;
+  color-scheme: light;
+}
+
+@mixin theme-dark {
+  --text: #f7f6f2;
+  --text-light: #f7f6f250;
+  --accent: #ef4f4e;
+  --bg: #242424;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include theme-dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include theme-dark;
 }
