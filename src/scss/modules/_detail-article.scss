@@ -1,6 +1,6 @@
 h1 {
   font-family: "Druk";
-  color: var(--black-800);
+  color: var(--text);
   text-transform: uppercase;
   font-style: normal;
   font-weight: 500;
@@ -28,11 +28,11 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background: var(--black-800);
+  background: var(--text);
 }
 
 .header-article p {
-  color: var(--white-900);
+  color: var(--bg);
   /* faq/text */
   font-family: "Ferro Italic II";
   font-size: 1.875rem;
@@ -42,7 +42,7 @@ h1 {
 }
 .article-content {
   font-family: "Ferro Regular I";
-  color: var(--black-800);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
 
@@ -89,7 +89,7 @@ h1 {
 }
 
 .card h3 {
-  color: var(--black-800);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
 
@@ -103,7 +103,7 @@ h1 {
 }
 
 .card p {
-  color: var(--black-800);
+  color: var(--text);
   leading-trim: both;
   text-edge: cap;
 
