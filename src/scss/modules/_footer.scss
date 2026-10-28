@@ -64,3 +64,55 @@ footer {
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
+
+@media (max-width: 402px) {
+  footer {
+    width: 23.04213rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .message-footer {
+    align-self: stretch;
+  }
+
+  .message-footer p {
+    font-size: var(--home-hero, 8.625rem);
+    font-weight: 900;
+  }
+
+  .infos-footer {
+    display: flex;
+    width: 54.19856rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.6875rem;
+    flex-shrink: 0;
+  }
+
+  .liens {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .liens a {
+    color: var(--text);
+
+    /* footer/text */
+    font-family: "Ferro Italic II";
+    font-size: 1.5625rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+}
