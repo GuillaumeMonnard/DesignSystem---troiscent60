@@ -124,10 +124,11 @@
   }
 
   .nav-container {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-template-columns: subgrid;
-    align-items: start;
+    display: flex;
+    width: 23.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.875rem;
   }
 
   .nav-link {
@@ -146,8 +147,10 @@
 
   .nav-links-container {
     display: flex;
+    height: 10.5rem;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
+    align-self: stretch;
   }
 }
