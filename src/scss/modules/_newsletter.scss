@@ -57,6 +57,8 @@ button {
   gap: 0.625rem;
   color: var(--bg);
   background: var(--accent);
+  border: none; /* retire le contour par défaut du navigateur */
+  cursor: pointer;
 
   /* button/label */
   font-family: "Druk";
