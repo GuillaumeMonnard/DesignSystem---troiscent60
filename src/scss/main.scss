@@ -35,6 +35,15 @@ a {
   font-family: "Ferro Italic II";
   font-size: 50;
 }
+
+// ajout test
+@media (max-width: 578px) {
+  body {
+    padding: 1rem;
+    align-items: stretch;
+    gap: 3rem; // à ajuster
+  }
+}
 // @media (max-width: 578px) {
 //   body {
 //     display: flex;
