@@ -1,3 +1,82 @@
+// .tag {
+//   width: 13.92706rem;
+//   height: 4rem;
+//   background: var(--accent);
+//   border: none;
+
+//   color: var(--button-label-color, #f7f6f2);
+//   text-align: center;
+
+//   /* faq/text */
+//   font-family: "Ferro Italic II";
+//   font-size: 1.875rem;
+//   font-style: italic;
+//   font-weight: 400;
+//   line-height: normal;
+//   text-transform: none;
+// }
+
+// .tag-container {
+//   display: grid;
+//   height: 8.9375rem;
+//   row-gap: 0.9375rem;
+//   column-gap: 15px;
+//   align-self: stretch;
+//   grid-template-rows: repeat(2, minmax(0, 1fr));
+//   grid-template-columns: repeat(6, minmax(0, 1fr));
+//   grid-auto-flow: row;
+// }
+
+// #page-rubrique-rectangle2 {
+//   height: 9.1875rem;
+//   align-self: stretch;
+// }
+
+// @media (max-width: 578px) {
+//   body {
+//     display: flex;
+//     width: 23.83338rem;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 1.75rem;
+//   }
+//   h1 {
+//     font-size: 6.125rem;
+//   }
+//   .tag-container {
+//     display: inline-grid;
+//     row-gap: 2.5rem;
+//     column-gap: 4rem;
+//     height: auto;
+//     align-self: stretch;
+//     grid-template-columns: repeat(3, minmax(0, 1fr));
+//   }
+//   .tag {
+//     display: flex;
+//     width: 6.25rem;
+//     height: 2.5rem;
+//     padding: 0.9375rem;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 0.625rem;
+//     font-size: var(--faq-text, 1.25rem);
+//   }
+//   #img2-layout5 {
+//     display: none;
+//   }
+//   .card-big-title-container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     gap: 1.5rem;
+//     align-self: stretch;
+//   }
+//   #page-rubrique-rectangle2 {
+//     height: 1.90994rem;
+//     align-self: stretch;
+//   }
+// }
+
 .tag-container {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -17,6 +96,7 @@
   font-style: italic;
   font-weight: 400;
   line-height: normal;
+  text-transform: none;
 }
 
 #page-rubrique-rectangle2 {
@@ -27,7 +107,6 @@
   body {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 1.75rem;
     width: 100%;
     padding-inline: 1rem;
@@ -58,7 +137,7 @@
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
-    gap: 1.5rem;
+    gap: 3.5rem;
   }
 
   #img2-layout5 {
