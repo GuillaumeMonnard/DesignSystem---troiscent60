@@ -14,16 +14,7 @@
    1. LAYOUT 1 & 2
    ========================================================================== */
 
-#layout1 {
-  display: grid;
-  height: 61.375rem;
-  row-gap: 0.9375rem;
-  column-gap: 15px;
-  align-self: stretch;
-  grid-template-rows: repeat(6, minmax(0, 1fr));
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
+#layout1,
 #layout2 {
   display: grid;
   height: 61.375rem;
@@ -78,7 +69,6 @@
   gap: 1.875rem;
   align-items: stretch;
   width: calc(100vw - 100px);
-  overflow: hidden;
   overflow: scroll;
 }
 
@@ -125,8 +115,6 @@
 
 #layout5 {
   display: flex;
-  flex-direction: row;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -144,72 +132,6 @@
   font-weight: 400;
   line-height: normal;
 }
-
-#card-small-title1 {
-  grid-row: 4 / span 3;
-  grid-column: 3 / span 4;
-}
-
-#card-small-title2 {
-  grid-row: 5 / span 2;
-  grid-column: 1 / span 4;
-}
-
-#card-small-title3 {
-  grid-row: 4 / span 3;
-  grid-column: 7 / span 5;
-}
-
-.small-title {
-  color: var(--text);
-
-  /* article/title-small */
-  font-family: "Druk";
-  font-size: 3.125rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.big-title {
-  color: var(--text);
-  text-box-trim: trim-both;
-  text-box-edge: cap alphabetic;
-
-  /* article/title-big */
-  font-family: "Druk";
-  font-size: 9.375rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-#img1 {
-  height: 17.54169rem;
-  align-self: end;
-  grid-row: 6 / span 1;
-  grid-column: 7 / span 6;
-  justify-self: stretch;
-  object-fit: cover;
-}
-#img2 {
-  height: 36.4375rem;
-  grid-row: 1 / span 4;
-  grid-column: 1 / span 2;
-  justify-self: stretch;
-  object-fit: cover;
-}
-#img3 {
-  align-self: stretch;
-  grid-row: 2 / span 2;
-  grid-column: 8 / span 4;
-  justify-self: stretch;
-  object-fit: cover;
-}
-
-//
 
 .hero-layout5 {
   display: flex;
@@ -483,14 +405,7 @@
 @media (max-width: 578px) {
   /* --- Layout 1 & 2 --- */
 
-  #layout1 {
-    width: 100%;
-    height: 54.625rem;
-    row-gap: 0.625rem;
-    column-gap: 10px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
+  #layout1,
   #layout2 {
     width: 100%;
     height: 54.625rem;
@@ -557,7 +472,7 @@
 
   #hero1 {
     align-self: start;
-    justify-self: end;
+    justify-self: start;
     grid-row: 1 / span 1;
     grid-column: 2 / span 2;
   }
@@ -597,170 +512,6 @@
     width: 100%;
   }
 
-  #card-small-title1 {
-    display: flex;
-    width: 100%;
-    padding: 0.9375rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-    align-self: stretch;
-    grid-row: 3 / span 3;
-    grid-column: 1 / span 2;
-  }
-
-  #layout1 .card-small-title {
-    display: flex;
-    padding: 0.9375rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-    align-self: stretch;
-    grid-row: 3 / span 3;
-    grid-column: 1 / span 3;
-  }
-
-  /* --- Rectangles --- */
-
-  #rectangle1 {
-    height: 15.70838rem;
-    align-self: start;
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
-    justify-self: stretch;
-  }
-
-  #rectangle2 {
-    background-color: red;
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  #rectangle3 {
-    align-self: stretch;
-    grid-row: 3 / span 3;
-    grid-column: 3 / span 1;
-    justify-self: stretch;
-  }
-
-  // layout1
-  #rectangle1 {
-    height: 15.70838rem;
-    align-self: start;
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-    justify-self: stretch;
-  }
-
-  #rectangle3 {
-    align-self: stretch;
-    grid-row: 3 / span 3;
-    grid-column: 4 / span 4;
-    justify-self: stretch;
-  }
-
-  #rectangle4 {
-    grid-row: 1;
-    grid-column: 3;
-  }
-
-  #rectangle5 {
-    grid-row: 2 / span 2;
-    grid-column: 3;
-  }
-
-  #layout1 #rectangle2 {
-    display: none;
-  }
-
-  #hero1  {
-    align-self: start;
-    justify-self: end;
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 2;
-  }
-
-  #hero2 {
-    align-self: MIN;
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 2;
-    justify-self: MIN;
-  }
-
-  #hero3 {
-    align-self: start;
-    justify-self: end;
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 2;
-  }
-
-  #img1 {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    align-self: stretch;
-    grid-row: 6 / span 1;
-    grid-column: 1 / span 3;
-    justify-self: stretch;
-  }
-
-  #img2 {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    align-self: stretch;
-    grid-row: 2 / span 2;
-    grid-column: 1 / span 1;
-    justify-self: stretch;
-  }
-
-  #img3 {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    align-self: stretch;
-    grid-row: 5 / span 2;
-    grid-column: 1 / span 2;
-    justify-self: stretch;
-  }
-  #card-small-title1 {
-    display: flex;
-    width: 100%;
-    padding: 0.9375rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-    align-self: stretch;
-    grid-row: 3 / span 3;
-    grid-column: 1 / span 2;
-  }
-  // layout1
-  #rectangle1 {
-    height: 15.70838rem;
-    align-self: start;
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-    justify-self: stretch;
-  }
-  #rectangle3 {
-    align-self: stretch;
-    grid-row: 3 / span 3;
-    grid-column: 4 / span 4;
-    justify-self: stretch;
-  }
-
-  #rectangle4 {
-    height: 6.5rem;
-    align-self: start;
-    grid-row: 1 / span 1;
-    grid-column: 3 / span 1;
-    justify-self: stretch;
-  }
-
-  #layout1 #rectangle2 {
-    display: none;
-  }
-
   #layout1 .card-small-title {
     display: flex;
     padding: 0.9375rem;
@@ -796,5 +547,71 @@
 
   #card-small-title3 p {
     display: none;
+  }
+
+  /* --- Rectangles --- */
+
+  #rectangle1 {
+    height: 15.70838rem;
+    align-self: start;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    justify-self: stretch;
+  }
+
+  #layout1 #rectangle2 {
+    display: none;
+  }
+
+  #rectangle3 {
+    align-self: stretch;
+    grid-row: 3 / span 3;
+    grid-column: 3 / span 1;
+    justify-self: stretch;
+  }
+
+  #rectangle4 {
+    height: 6.5rem;
+    align-self: start;
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    justify-self: stretch;
+  }
+
+  #rectangle5 {
+    grid-row: 2 / span 2;
+    grid-column: 3;
+  }
+
+  /* --- Images --- */
+
+  #img1 {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 3;
+    justify-self: stretch;
+  }
+
+  #img2 {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 1;
+    justify-self: stretch;
+  }
+
+  #img3 {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    grid-row: 5 / span 2;
+    grid-column: 1 / span 2;
+    justify-self: stretch;
   }
 }
