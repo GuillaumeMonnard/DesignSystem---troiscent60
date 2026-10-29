@@ -417,7 +417,7 @@
     height: 15.70838rem;
     align-self: start;
     grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     justify-self: stretch;
   }
 
@@ -494,6 +494,36 @@
   #card-small-title1 {
     display: flex;
     width: 100%;
+    padding: 0.9375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    align-self: stretch;
+    grid-row: 3 / span 3;
+    grid-column: 1 / span 2;
+  }
+  // layout1
+  #rectangle1 {
+    height: 15.70838rem;
+    align-self: start;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    justify-self: stretch;
+  }
+  #layout1 .hero {
+    width: 15.4375rem;
+    align-self: MIN;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 2;
+    justify-self: MAX;
+  }
+  #layout1 #rectangle2 {
+    display: none;
+  }
+
+  #layout1 .card-small-title {
+    display: flex;
+    width: 15.6875rem;
     padding: 0.9375rem;
     flex-direction: column;
     align-items: flex-start;
