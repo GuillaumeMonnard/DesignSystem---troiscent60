@@ -142,8 +142,8 @@ h1 {
     align-items: start;
   }
   .header-article h1 {
-    width: 23.875rem;
-    height: 12.9375rem;
+    width: 100%;
+    height: auto;
     font-size: 6.125rem;
   }
   .article-info-container {
@@ -156,6 +156,7 @@ h1 {
   .article-hashtag,
   .article-info-author {
     display: flex;
+    gap: 0.625rem;
   }
   .article-hashtag p,
   .article-info-author p {
@@ -168,18 +169,21 @@ h1 {
     align-items: start;
   }
 
+  .card {
+    width: 100%;
+  }
   .card p,
   .article-content {
     font-size: 1rem;
-    width: 23.875rem;
+    width: 100%;
   }
   .card h3 {
     font-size: 1.25rem;
-    width: 22.625rem;
-    height: 2.3125rem;
+    width: 100%;
+    height: auto;
   }
   .article-gino {
-    width: 23.875rem;
+    width: 100%;
     height: 8.71rem;
   }
 
@@ -195,9 +199,7 @@ h1 {
     display: none;
   }
   #page-article-rectangle2 {
-    width: 23.875rem;
+    width: 100%;
     height: 1.875rem;
   }
 }
-
-// problème de place à droite en mobile que j'arrive pas à enlever
