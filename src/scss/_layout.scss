@@ -607,6 +607,7 @@
 
   #img1 {
     display: flex;
+    height: auto; // annule la hauteur fixe du desktop
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
