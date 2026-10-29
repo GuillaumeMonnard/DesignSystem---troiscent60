@@ -368,6 +368,26 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  #layout5 {
+    display: flex;
+    padding: 0.4375rem 0.625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+
+  .hero-layout5 {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.3125rem;
+    align-self: stretch;
+    height: auto;
+  }
+  #layout5 .card-big-title-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .hero {
     font-size: 8.625rem;
   }
@@ -405,6 +425,15 @@
     grid-row: 3 / span 3;
     grid-column: 3 / span 1;
     justify-self: stretch;
+  }
+
+  #layout5-rectangle1 {
+    max-height: 6.5rem;
+  }
+  #layout5 img,
+  #layout5 p,
+  #layout5-rectangle2 {
+    display: none;
   }
 
   #hero1  {
