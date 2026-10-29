@@ -1,6 +1,6 @@
 #header-home-page {
   display: flex;
-  width: 88.25rem;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.9375rem;
@@ -8,8 +8,7 @@
 
 #img-header-home-page {
   display: flex;
-  width: 88.25rem;
-  height: 36.4375rem;
+  width: 100%;
   padding-bottom: 2.10031rem;
   justify-content: center;
   align-items: center;
@@ -22,11 +21,16 @@
   align-self: stretch;
 }
 
-.legende {
-  color: var(--text, #242424);
+.legende,
+.description {
+  color: var(--text);
   font-family: "Ferro Italic II";
-  font-size: var(--faq-text, 1.875rem);
+  font-size: 1.875rem;
   font-weight: 400;
+}
+
+.legende {
+  color: var(--text-light);
 }
 
 #legende-header-home-page-1 {
@@ -40,4 +44,11 @@
 #legende-droite-header-home-page {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 578px) {
+  .legende,
+  .description {
+    font-size: 1.25rem;
+  }
 }
