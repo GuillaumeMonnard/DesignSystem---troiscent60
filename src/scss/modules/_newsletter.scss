@@ -2,7 +2,7 @@
 
 .newsletter {
   display: flex;
-  width: 88.0625rem;
+  width: 100%;
   height: 34.5rem;
   padding: 3.9375rem 2.75rem;
   flex-direction: column;
@@ -25,6 +25,7 @@
 
 .newsletter .separator {
   width: 60rem;
+  max-width: 100%;
   height: 0.1rem;
   background: var(--bg);
 }
@@ -66,7 +67,7 @@ button {
 
 @media (max-width: 578px) {
   .newsletter {
-    width: 23rem;
+    width: 100%;
     height: 25.90844rem;
     flex-direction: column;
     justify-content: center;

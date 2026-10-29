@@ -191,7 +191,9 @@ h1 {
     gap: 1.25rem;
     align-self: stretch;
   }
-  #page-article-rectangle1,
+  #page-article-rectangle1 {
+    display: none;
+  }
   #page-article-rectangle2 {
     width: 23.875rem;
     height: 1.875rem;
