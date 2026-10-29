@@ -415,7 +415,7 @@
     height: 15.70838rem;
     align-self: start;
     grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     justify-self: stretch;
   }
 
@@ -450,9 +450,9 @@
 
   #hero2 {
     align-self: start;
-    justify-self: end;
+    justify-self: start;
     grid-row: 2 / span 1;
-    grid-column: 2 / span 1;
+    grid-column: 2 / span 2;
   }
 
   #hero3 {
@@ -499,5 +499,34 @@
     align-self: stretch;
     grid-row: 3 / span 3;
     grid-column: 1 / span 2;
+  }
+  // layout1
+  #rectangle1 {
+    height: 15.70838rem;
+    align-self: start;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    justify-self: stretch;
+  }
+  #rectangle3 {
+    align-self: stretch;
+    grid-row: 3 / span 3;
+    grid-column: 4 / span 4;
+    justify-self: stretch;
+  }
+
+  #layout1 #rectangle2 {
+    display: none;
+  }
+
+  #layout1 .card-small-title {
+    display: flex;
+    padding: 0.9375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    align-self: stretch;
+    grid-row: 3 / span 3;
+    grid-column: 1 / span 3;
   }
 }
