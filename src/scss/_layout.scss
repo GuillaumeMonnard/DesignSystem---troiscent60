@@ -355,7 +355,6 @@
     height: 54.625rem;
     row-gap: 0.625rem;
     column-gap: 10px;
-    grid-template-rows: repeat(6, minmax(0, 1fr));
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -364,7 +363,6 @@
     height: 54.625rem;
     row-gap: 0.625rem;
     column-gap: 10px;
-    grid-template-rows: repeat(6, minmax(0, 1fr));
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
