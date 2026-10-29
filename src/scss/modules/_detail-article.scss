@@ -127,7 +127,7 @@ h1 {
   align-self: stretch;
 }
 
-@media (min-width: 360px) and (max-width: 578px) {
+@media (max-width: 578px) {
   .header-article {
     display: flex;
     flex-direction: column;
@@ -158,11 +158,22 @@ h1 {
   .article-info-author p {
     font-size: 1.25rem;
   }
-  .article-content p {
-    font-size: 1rem;
+  .article-page-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
   }
-  .article-content h3 {
+
+  .card p,
+  .article-content {
+    font-size: 1rem;
+    width: 23.875rem;
+  }
+  .card h3 {
     font-size: 1.25rem;
+    width: 22.625rem;
+    height: 2.3125rem;
   }
   .article-gino {
     width: 23.875rem;
@@ -176,5 +187,10 @@ h1 {
     align-items: flex-start;
     gap: 1.25rem;
     align-self: stretch;
+  }
+  #page-article-rectangle1,
+  #page-article-rectangle2 {
+    width: 23.875rem;
+    height: 1.875rem;
   }
 }
