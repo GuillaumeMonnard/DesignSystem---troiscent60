@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Druk";
   src: url("../assets/fonts/DrukCondensed-Super-Trial.woff") format("woff");
+  font-weight: 400;
 }
 
 @font-face {
@@ -11,11 +12,12 @@
 @font-face {
   font-family: "Ferro Regular II";
   src: url("../assets/fonts/FerroTest-RegularII.woff") format("woff");
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Ferro Italic II";
   src: url("../assets/fonts/FerroTest-ItalicII.woff") format("woff");
+  font-style: italic; // fonte déjà italique : évite que le navigateur la penche une 2e fois
 }
