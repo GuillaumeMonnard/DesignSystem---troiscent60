@@ -128,15 +128,17 @@ h1 {
 }
 
 @media (max-width: 578px) {
+  body {
+    display: flex;
+    gap: 1.5625rem;
+  }
   .header-article {
     display: flex;
     flex-direction: column;
-    width: 23.875rem;
-    padding: 0.625rem;
+
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 0.625rem;
   }
   .header-article h1 {
     width: 23.875rem;
@@ -194,3 +196,5 @@ h1 {
     height: 1.875rem;
   }
 }
+
+// problème de place à droite en mobile que j'arrive pas à enlever
