@@ -523,28 +523,32 @@
     grid-column: 1 / span 2;
   }
 
-  // le texte s'arrête après 12 lignes entières et se termine par "..."
-  // (changer le 12 aux deux endroits + dans le calc si besoin)
-  #layout1 .card-small-title p {
+  // le texte s'arrête après --lines lignes entières et se termine par "..."
+  #layout1 .card-small-title p,
+  #card-small-title2 p {
+    --lines: 12;
     line-height: 1.3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 12;
-    line-clamp: 12;
+    -webkit-line-clamp: var(--lines);
+    line-clamp: var(--lines);
     overflow: hidden;
-    max-height: calc(1.3em * 12); // pile 12 lignes
+    max-height: calc(1.3em * var(--lines)); // pile --lines lignes
   }
 
   #card-small-title2 {
     display: flex;
-    width: 15.70831rem;
-    height: 16.79169rem;
     padding: 0.9375rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
+    align-self: stretch;
     grid-row: 2 / span 2;
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 2;
+  }
+
+  #card-small-title2 p {
+    --lines: 6;
   }
 
   #card-small-title3 {
@@ -591,8 +595,12 @@
   }
 
   #rectangle5 {
-    grid-row: 2 / span 2;
+    grid-row: 5 / span 2;
     grid-column: 3;
+  }
+
+  #rectangle6 {
+    display: none;
   }
 
   /* --- Images --- */
@@ -609,11 +617,12 @@
 
   #img2 {
     display: flex;
+    height: auto; // annule la hauteur fixe du desktop
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
     grid-row: 2 / span 2;
-    grid-column: 1 / span 1;
+    grid-column: 3 / span 1;
     justify-self: stretch;
   }
 
