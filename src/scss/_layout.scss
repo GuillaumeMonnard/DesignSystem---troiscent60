@@ -375,7 +375,14 @@
     align-items: flex-start;
     gap: 0.625rem;
   }
-
+  #layout5 .card-big-title .big-title {
+    display: flex;
+    width: 23.875rem;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+  }
   .hero-layout5 {
     display: flex;
     align-items: flex-start;
