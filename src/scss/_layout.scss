@@ -429,7 +429,9 @@
   }
 
   #reels-container {
-    width: calc(100vw - 2rem); // padding du body en mobile : 1rem de chaque côté
+    width: calc(
+      100vw - 2rem
+    ); // padding du body en mobile : 1rem de chaque côté
     gap: 0.9375rem;
   }
 
