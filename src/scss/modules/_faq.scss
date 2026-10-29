@@ -137,6 +137,7 @@ details[open] p {
   }
 
   .title-container #hero7 {
+    align-self: center; /* .hero met stretch : on le recentre à côté de l'image */
     margin: 0;
     padding: 0;
     line-height: 1;
