@@ -13,7 +13,9 @@
   gap: 4rem;
   justify-content: space-between;
 }
-
+.title-container h2 {
+  text-align: start;
+}
 .title-container img {
   width: 31.5585rem;
   height: 31.54863rem;
@@ -101,3 +103,31 @@ details[open]:hover p {
 }
 
 // changer textes et changer également pour que le title-container prenne toute la hauteur
+
+@media (max-width: 578px) {
+  .faq-content-container {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .title-container {
+    flex-direction: row;
+  }
+  .title-container img {
+    width: 8.4375rem;
+    height: 8.4375rem;
+  }
+  details p {
+    font-size: 1.25rem;
+    width: 22rem;
+  }
+  summary {
+    margin: 0.5rem;
+    gap: 0.5rem;
+
+    max-width: 22rem;
+    height: auto;
+    padding: 1.875rem 2.125rem;
+    gap: 1.0625rem;
+    font-size: 1.25rem;
+  }
+}
