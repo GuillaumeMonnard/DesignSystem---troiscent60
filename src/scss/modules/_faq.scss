@@ -86,20 +86,17 @@ details p {
   text-align: left; /* texte aligné à gauche */
 }
 
-/* écrans avec souris : rouge au survol */
-@media (hover: hover) {
-  details:hover,
-  details[open]:hover summary,
-  details[open]:hover p {
-    background-color: var(--accent);
-  }
+/* onglet ouvert : rouge partout (desktop et mobile) */
+details[open],
+details[open] summary,
+details[open] p {
+  background-color: var(--accent);
 }
 
-/* écrans tactiles : pas de survol, rouge seulement quand l'onglet est ouvert */
-@media (hover: none) {
-  details[open],
-  details[open] summary,
-  details[open] p {
+/* écrans avec souris uniquement : rouge aussi au survol
+   (sur tactile le survol reste bloqué après un tap) */
+@media (hover: hover) {
+  details:hover {
     background-color: var(--accent);
   }
 }
