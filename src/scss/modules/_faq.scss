@@ -25,7 +25,7 @@
   width: 51.6875rem;
   height: 55.875rem;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch; /* les details prennent toute la largeur */
   gap: 1.0625rem;
 }
 
@@ -39,10 +39,6 @@ details {
   line-height: normal;
 }
 
-details:hover {
-  background-color: var(--accent);
-}
-
 summary {
   margin: 0.5rem;
 
@@ -54,7 +50,6 @@ summary {
   /* question en haut, flèche dessous */
   display: flex;
 
-  width: 51.6875rem;
   height: 9.375rem;
   padding: 0.625rem;
   flex-direction: column;
@@ -91,9 +86,22 @@ details p {
   text-align: left; /* texte aligné à gauche */
 }
 
-details[open]:hover summary,
-details[open]:hover p {
-  background-color: var(--accent);
+/* écrans avec souris : rouge au survol */
+@media (hover: hover) {
+  details:hover,
+  details[open]:hover summary,
+  details[open]:hover p {
+    background-color: var(--accent);
+  }
+}
+
+/* écrans tactiles : pas de survol, rouge seulement quand l'onglet est ouvert */
+@media (hover: none) {
+  details[open],
+  details[open] summary,
+  details[open] p {
+    background-color: var(--accent);
+  }
 }
 
 // changer textes et changer également pour que le title-container prenne toute la hauteur
@@ -125,7 +133,6 @@ details[open]:hover p {
   }
   summary {
     margin: 0.5rem;
-    max-width: 22rem;
     height: auto;
     padding: 1.875rem 2.125rem;
     gap: 1.0625rem;
