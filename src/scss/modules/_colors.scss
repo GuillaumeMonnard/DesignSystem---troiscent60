@@ -23,3 +23,22 @@
 :root[data-theme="dark"] {
   @include theme-dark;
 }
+
+// Images avec une version par thème (NB = clair, NF = sombre) :
+// on cache celle qui ne correspond pas au thème actif
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) img.img-dark {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) img.img-light {
+    display: none;
+  }
+}
+
+:root[data-theme="light"] img.img-dark,
+:root[data-theme="dark"] img.img-light {
+  display: none;
+}
