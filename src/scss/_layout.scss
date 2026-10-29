@@ -69,7 +69,8 @@
   gap: 1.875rem;
   align-items: stretch;
   width: calc(100vw - 100px);
-  overflow: scroll;
+  overflow-x: auto;
+  scrollbar-width: none; // cache la barre sur Firefox
 }
 
 #reels-container::-webkit-scrollbar {
@@ -419,6 +420,39 @@
   .layout3-container {
     height: auto;
     gap: 1rem;
+  }
+
+  /* --- Layout 4 (reels) : même layout, dimensions / 2 --- */
+
+  #layout4 {
+    gap: 1.5625rem;
+  }
+
+  #reels-container {
+    width: calc(100vw - 2rem); // padding du body en mobile : 1rem de chaque côté
+    gap: 0.9375rem;
+  }
+
+  #reels-content {
+    gap: 0.625rem;
+  }
+
+  #rectangle8 {
+    width: 3.25rem;
+    height: 19.34375rem;
+  }
+
+  .reel-card {
+    width: 10.90625rem;
+  }
+
+  .reel-img {
+    border-radius: 0.9375rem;
+  }
+
+  .reel-svg {
+    width: 1.8125rem;
+    height: auto;
   }
 
   /* --- Layout 5 --- */
