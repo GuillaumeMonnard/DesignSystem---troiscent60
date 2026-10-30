@@ -2,12 +2,11 @@
    SOMMAIRE
    1. Layout 1 & 2
    2. Layout 3
-   3. Layout 4 (reels)
-   4. Layout 5
-   5. Textes (hero, titres, cards)
-   6. Rectangles & couleurs
-   7. Images
-   8. Media query mobile
+   3. Layout 5
+   4. Position des titres et des cartes
+   5. Rectangles & couleurs
+   6. Images
+   7. Media query mobile
    ========================================================================== */
 
 /* ==========================================================================
@@ -52,66 +51,13 @@
   gap: 2.8rem;
 }
 
-/* ==========================================================================
-   3. LAYOUT 4 (REELS)
-   ========================================================================== */
-
-#layout4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3.125rem;
-  align-self: self-start;
-}
-
-#reels-container {
-  display: flex;
-  gap: 1.875rem;
-  align-items: stretch;
-  width: calc(100vw - 100px);
-  overflow-x: auto;
-  scrollbar-width: none; // cache la barre sur Firefox
-}
-
-#reels-container::-webkit-scrollbar {
-  display: none;
-}
-
-#reels-content {
-  display: flex;
-  gap: 1.25rem;
-  align-items: stretch;
-}
-
 // lien autour d'une image : l'image garde sa place dans les grilles
 .img-link {
   display: contents;
 }
 
-.reel-card {
-  display: flex;
-  height: 100%;
-  width: 21.8125rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  position: relative;
-}
-
-.reel-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1.875rem;
-}
-
-.reel-svg {
-  position: absolute;
-}
-
 /* ==========================================================================
-   4. LAYOUT 5
+   3. LAYOUT 5
    ========================================================================== */
 
 #layout5 {
@@ -157,37 +103,9 @@
   gap: 1.5rem;
 }
 
-.card-big-title-container {
-  flex: 1;
-  display: grid;
-  /* 2 colonnes égales : gauche / droite */
-  grid-template-columns: 1fr 1fr;
-  gap: 1.9375rem;
-  align-items: start;
-}
-
-.card-big-title {
-  display: contents; /* les enfants deviennent directement des items de la grille */
-}
-
 /* Les titres de ce layout : plus petits que le .big-title par défaut */
 #layout5 .layout5-title {
   display: block;
-}
-
-/* Images : prennent toute la largeur de leur colonne */
-.card-big-title img {
-  width: 100%;
-  height: 18.28475rem;
-  object-fit: cover;
-  display: block;
-}
-
-.card-big-title p {
-  font-family: "Ferro Regular II";
-  font-size: 1.5625rem;
-  line-height: 1.2;
-  margin: 0;
 }
 
 #layout5-rectangle2 {
@@ -196,26 +114,8 @@
 }
 
 /* ==========================================================================
-   5. TEXTES (hero, titres, cards)
+   4. POSITION DES TITRES ET DES CARTES
    ========================================================================== */
-
-/* --- Hero --- */
-
-.hero {
-  align-self: stretch;
-  justify-self: MIN;
-  color: var(--text);
-  text-align: center;
-  text-box-trim: trim-both;
-  text-box-edge: cap alphabetic;
-
-  font-family: "Druk";
-  font-size: 23.375rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-}
 
 #hero1 {
   grid-row: 1 / span 1;
@@ -240,58 +140,6 @@
   text-align: start;
 }
 
-/* --- Titres --- */
-
-.small-title {
-  color: var(--text);
-
-  /* article/title-small */
-  font-family: "Druk";
-  font-size: 3.125rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.big-title {
-  color: var(--text);
-  text-box-trim: trim-both;
-  text-box-edge: cap alphabetic;
-
-  /* article/title-big */
-  font-family: "Druk";
-  font-size: 9.375rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-/* --- Cards --- */
-
-.card-small-title {
-  display: flex;
-  width: 29.6875rem;
-  padding: 0.9375rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.3125rem;
-  align-self: stretch;
-  justify-self: start;
-
-  color: var(--text);
-  text-box-trim: trim-both;
-  text-box-edge: cap alphabetic;
-
-  /* article/teaser */
-  font-family: "Ferro Regular II";
-  font-size: 1.5625rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 #card-small-title1 {
   grid-row: 4 / span 3;
   grid-column: 3 / span 4;
@@ -308,7 +156,7 @@
 }
 
 /* ==========================================================================
-   6. RECTANGLES & COULEURS
+   5. RECTANGLES & COULEURS
    ========================================================================== */
 
 .noir {
@@ -361,14 +209,8 @@
   align-self: stretch;
 }
 
-#rectangle8 {
-  width: 6.5rem;
-  height: 38.6875rem;
-  flex-shrink: 0;
-}
-
 /* ==========================================================================
-   7. IMAGES
+   6. IMAGES
    ========================================================================== */
 
 #img1 {
@@ -397,7 +239,7 @@
 }
 
 /* ==========================================================================
-   8. MEDIA QUERY MOBILE
+   7. MEDIA QUERY MOBILE
    ========================================================================== */
 
 @media (max-width: 578px) {
@@ -417,41 +259,6 @@
   .layout3-container {
     height: auto;
     gap: 1rem;
-  }
-
-  /* --- Layout 4 (reels) : même layout, dimensions / 2 --- */
-
-  #layout4 {
-    gap: 1.5625rem;
-  }
-
-  #reels-container {
-    width: calc(
-      100vw - 2rem
-    ); // padding du body en mobile : 1rem de chaque côté
-    gap: 0.9375rem;
-  }
-
-  #reels-content {
-    gap: 0.625rem;
-  }
-
-  #rectangle8 {
-    width: 3.25rem;
-    height: 19.34375rem;
-  }
-
-  .reel-card {
-    width: 10.90625rem;
-  }
-
-  .reel-img {
-    border-radius: 0.9375rem;
-  }
-
-  .reel-svg {
-    width: 1.8125rem;
-    height: auto;
   }
 
   /* --- Layout 5 --- */
@@ -495,12 +302,6 @@
     display: none;
   }
 
-  /* --- Textes : hero --- */
-
-  .hero {
-    font-size: clamp(4rem, 22vw, 8.625rem);
-  }
-
   #hero1 {
     align-self: start;
     justify-self: start;
@@ -520,26 +321,6 @@
     justify-self: end;
     grid-row: 1 / span 1;
     grid-column: 1 / span 2;
-  }
-
-  /* --- Textes : titres --- */
-
-  .small-title {
-    font-size: 2.1875rem;
-  }
-
-  .big-title {
-    font-size: clamp(2rem, 11vw, 3.875rem);
-    overflow-wrap: anywhere;
-  }
-
-  /* --- Textes : cards --- */
-
-  .card-small-title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 1.125rem;
-    width: 100%;
   }
 
   #layout1 .card-small-title {

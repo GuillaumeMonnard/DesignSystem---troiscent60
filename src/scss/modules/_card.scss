@@ -1,0 +1,71 @@
+.card-small-title {
+  display: flex;
+  width: 29.6875rem;
+  padding: 0.9375rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3125rem;
+  align-self: stretch;
+  justify-self: start;
+
+  color: var(--text);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+
+  /* article/teaser */
+  font-family: "Ferro Regular II";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-big-title-container {
+  flex: 1;
+  display: grid;
+  /* 2 colonnes égales : gauche / droite */
+  grid-template-columns: 1fr 1fr;
+  gap: 1.9375rem;
+  align-items: start;
+}
+
+.card-big-title {
+  display: contents; /* les enfants deviennent directement des items de la grille */
+}
+
+/* Images : prennent toute la largeur de leur colonne */
+.card-big-title img {
+  width: 100%;
+  height: 18.28475rem;
+  object-fit: cover;
+  display: block;
+}
+
+.card-big-title p {
+  font-family: "Ferro Regular II";
+  font-size: 1.5625rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+// display: contents sur .card-big-title l'emporterait sur l'attribut hidden
+.card-big-title[hidden] {
+  display: none;
+}
+
+@media (max-width: 578px) {
+  .card-small-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.125rem;
+    width: 100%;
+  }
+
+  .card-big-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 3.5rem;
+  }
+}

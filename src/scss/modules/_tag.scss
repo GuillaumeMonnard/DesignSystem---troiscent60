@@ -1,0 +1,49 @@
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  gap: 0.9375rem;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  padding-inline: 3rem;
+  background: var(--accent);
+  border: none;
+
+  color: var(--bg);
+  text-align: center;
+  font-family: "Ferro Italic II";
+  font-size: 1.875rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: none;
+}
+
+// rubrique sélectionnée (classe ajoutée dans main.js)
+.tag.tag-active {
+  background: var(--text);
+  color: var(--bg);
+}
+
+@media (max-width: 578px) {
+  .tag-container {
+    display: grid;
+    align-self: stretch;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem 1rem;
+  }
+
+  .tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    padding: 0.9375rem;
+    font-size: 1.25rem;
+  }
+}

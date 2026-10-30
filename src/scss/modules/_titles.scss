@@ -1,0 +1,56 @@
+.hero {
+  align-self: stretch;
+  justify-self: MIN;
+  color: var(--text);
+  text-align: center;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+
+  font-family: "Druk";
+  font-size: 23.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.small-title {
+  color: var(--text);
+
+  /* article/title-small */
+  font-family: "Druk";
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.big-title {
+  color: var(--text);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+
+  /* article/title-big */
+  font-family: "Druk";
+  font-size: 9.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 578px) {
+  .hero {
+    font-size: clamp(4rem, 22vw, 8.625rem);
+  }
+
+  .small-title {
+    font-size: 2.1875rem;
+  }
+
+  .big-title {
+    font-size: clamp(2rem, 11vw, 3.875rem);
+    overflow-wrap: anywhere;
+  }
+}

@@ -2,43 +2,6 @@
   align-self: flex-start;
 }
 
-.tag-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-self: flex-start;
-  gap: 0.9375rem;
-}
-
-.tag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 4rem;
-  padding-inline: 3rem;
-  background: var(--accent);
-  border: none;
-
-  color: var(--bg);
-  text-align: center;
-  font-family: "Ferro Italic II";
-  font-size: 1.875rem;
-  font-style: italic;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: none;
-}
-
-// rubrique sélectionnée (classe ajoutée dans main.js)
-.tag.tag-active {
-  background: var(--text);
-  color: var(--bg);
-}
-
-// display: contents sur .card-big-title l'emporterait sur l'attribut hidden
-.card-big-title[hidden] {
-  display: none;
-}
-
 #page-rubrique-rectangle2 {
   height: 9.1875rem;
 }
@@ -46,30 +9,6 @@
 @media (max-width: 578px) {
   .page-title {
     font-size: 6.125rem;
-  }
-
-  .tag-container {
-    display: grid;
-    align-self: stretch;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem 1rem;
-  }
-
-  .tag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2.5rem;
-    padding: 0.9375rem;
-    font-size: 1.25rem;
-  }
-
-  .card-big-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-    gap: 3.5rem;
   }
 
   #img2-layout5 {
