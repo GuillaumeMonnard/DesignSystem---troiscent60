@@ -56,6 +56,7 @@ const rubriques = {
 const rubriqueTitle = document.querySelector(".rubrique-title");
 
 const rubriqueArticles = document.querySelectorAll("[data-rubrique]");
+const rubriqueTags = document.querySelectorAll(".tag-container .tag");
 
 function updateRubrique() {
   if (!rubriqueTitle) return;
@@ -66,6 +67,9 @@ function updateRubrique() {
   // sans rubrique valide dans l'URL, on affiche tous les articles
   rubriqueArticles.forEach((article) => {
     article.hidden = Boolean(rubrique) && article.dataset.rubrique !== key;
+  });
+  rubriqueTags.forEach((tag) => {
+    tag.classList.toggle("tag-active", tag.hash === location.hash);
   });
 }
 

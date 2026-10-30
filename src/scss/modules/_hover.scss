@@ -18,6 +18,23 @@ $hover-images: "A412-1", "A412-2", "A412-3", "ACCA-1", "ACCA-2", "ACCA-3",
     }
   }
 
+  .tag {
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease;
+  }
+
+  .tag:hover {
+    background: var(--text);
+    color: var(--bg);
+  }
+
+  // page article : le tag est déjà sur un bloc noir, on l'inverse
+  .article-info-top .tag:hover {
+    background: var(--bg);
+    color: var(--text);
+  }
+
   @each $image in $hover-images {
     img[src*="#{$image}-NB"]:hover {
       content: url("../assets/img-articles/#{$image}-NF.webp");

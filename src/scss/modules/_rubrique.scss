@@ -27,6 +27,12 @@
   text-transform: none;
 }
 
+// rubrique sélectionnée (classe ajoutée dans main.js)
+.tag.tag-active {
+  background: var(--text);
+  color: var(--bg);
+}
+
 // display: contents sur .card-big-title l'emporterait sur l'attribut hidden
 .card-big-title[hidden] {
   display: none;
