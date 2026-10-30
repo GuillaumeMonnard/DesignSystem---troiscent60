@@ -1,4 +1,4 @@
-footer {
+.footer {
   display: flex;
   width: 100%;
   min-height: 68.48431rem;
@@ -8,7 +8,6 @@ footer {
   align-items: center;
   gap: 1rem;
 }
-// ajout test
 
 .message-footer {
   display: flex;
@@ -39,7 +38,6 @@ footer {
   align-items: flex-start;
   gap: 3.6875rem;
 }
-// ajout test
 
 .liens {
   display: flex;
@@ -67,7 +65,7 @@ footer {
 }
 
 @media (max-width: 578px) {
-  footer {
+  .footer {
     width: 100%;
     min-height: 0;
     flex-direction: column;
@@ -75,7 +73,6 @@ footer {
     gap: 2.5rem;
     padding: 0;
   }
-  // ajout test
 
   .message-footer {
     display: flex;
@@ -94,7 +91,6 @@ footer {
     width: auto;
     height: auto;
   }
-  // ajout test
 
   .liens a {
     font-size: 1.25rem;
@@ -104,10 +100,8 @@ footer {
     height: auto;
     max-height: none;
   }
-  // ajout test
   .infos-footer {
     width: 100%;
     max-width: none;
   }
-  // ajout test
 }

@@ -18,7 +18,7 @@
   background: var(--accent);
   border: none;
 
-  color: var(--button-label-color, #f7f6f2);
+  color: var(--bg);
   text-align: center;
   font-family: "Ferro Italic II";
   font-size: 1.875rem;
@@ -44,16 +44,7 @@
 }
 
 @media (max-width: 578px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    gap: 1.75rem;
-    width: 100%;
-    padding-inline: 1rem;
-    box-sizing: border-box;
-  }
-
-  h1 {
+  .page-title {
     font-size: 6.125rem;
   }
 
@@ -70,7 +61,7 @@
     align-items: center;
     height: 2.5rem;
     padding: 0.9375rem;
-    font-size: var(--faq-text, 1.25rem);
+    font-size: 1.25rem;
   }
 
   .card-big-title-container {

@@ -11,19 +11,6 @@
 @import "./modules/faq";
 @import "./modules/hover";
 
-body {
-  padding: 50px;
-  background-color: var(--bg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6.25rem;
-}
-
-a {
-  text-decoration: none;
-}
-
 .druk {
   font-family: "Druk";
   text-transform: uppercase;
@@ -36,14 +23,6 @@ a {
   font-size: 50;
 }
 
-// ajout test
-@media (max-width: 578px) {
-  body {
-    padding: 1rem;
-    align-items: stretch;
-    gap: 3rem; // à ajuster
-  }
-}
 // @media (max-width: 578px) {
 //   body {
 //     display: flex;

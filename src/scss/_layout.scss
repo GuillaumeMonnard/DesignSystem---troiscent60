@@ -506,7 +506,6 @@
   /* --- Textes : hero --- */
 
   .hero {
-    // font-size: 8.625rem;
     font-size: clamp(4rem, 22vw, 8.625rem);
   }
 
@@ -540,7 +539,6 @@
   .big-title {
     font-size: clamp(2rem, 11vw, 3.875rem);
     overflow-wrap: anywhere;
-    // font-size: 3.875rem;
   }
 
   /* --- Textes : cards --- */
@@ -563,17 +561,16 @@
     grid-column: 1 / span 2;
   }
 
-  // le texte s'arrête après --lines lignes entières et se termine par "..."
+  // le texte s'arrête après un nombre de lignes entières et se termine par "..."
   #layout1 .card-small-title p,
   #card-small-title2 p {
-    --lines: 12;
     line-height: 1.3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: var(--lines);
-    line-clamp: var(--lines);
+    -webkit-line-clamp: 12;
+    line-clamp: 12;
     overflow: hidden;
-    max-height: calc(1.3em * var(--lines)); // pile --lines lignes
+    max-height: calc(1.3em * 12); // pile 12 lignes
   }
 
   #card-small-title2 {
@@ -588,7 +585,9 @@
   }
 
   #card-small-title2 p {
-    --lines: 6;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    max-height: calc(1.3em * 6); // pile 6 lignes
   }
 
   #card-small-title3 {
