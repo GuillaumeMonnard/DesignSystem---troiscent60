@@ -75,7 +75,7 @@ h1 {
 }
 
 .article-banner-gino {
-  background-image: url("../assets/img-articles/ACCA-3-NB.webp");
+  background-image: url("../assets/img-articles/GINO-3-NB.webp");
 }
 
 .article-banner-a412 {
@@ -101,7 +101,9 @@ h1 {
 
 .card {
   display: flex;
-  width: 43.6875rem;
+  flex: 1 1 0; // les 2 cartes se partagent la largeur disponible
+  min-width: 0;
+  max-width: 43.6875rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.9375rem;
@@ -126,7 +128,8 @@ h1 {
   font-style: italic;
   font-weight: 500;
   line-height: normal;
-  width: 38.05663rem;
+  width: 100%;
+  max-width: 38.05663rem;
 }
 
 .card p {
@@ -138,7 +141,8 @@ h1 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  width: 36.5625rem;
+  width: 100%;
+  max-width: 36.5625rem;
 }
 
 .article-content p + p {
@@ -153,7 +157,8 @@ h1 {
 }
 
 .card ul {
-  width: 36.5625rem;
+  width: 100%;
+  max-width: 36.5625rem;
   padding-left: 1.2em;
   color: var(--text);
   font-family: "Ferro Regular I";
@@ -175,6 +180,7 @@ h1 {
 .card-article-img {
   background: lightgray 50% / cover no-repeat;
   flex: 1 0 0;
+  min-height: 20rem; // reste visible même si le texte remplit la colonne
   align-self: stretch;
 }
 
@@ -237,7 +243,13 @@ h1 {
   }
 
   .card {
+    flex: none;
     width: 100%;
+  }
+  .card-article-img {
+    flex: none;
+    min-height: 0;
+    height: 12rem;
   }
   .card p,
   .article-content {
