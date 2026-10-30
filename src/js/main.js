@@ -74,6 +74,15 @@ updateRubrique();
 // Clic sur une rubrique alors qu'on est déjà sur la page : pas de rechargement
 window.addEventListener("hashchange", updateRubrique);
 
+// Clic sur le tag de la rubrique en cours : on retire le filtre
+document.querySelector(".tag-container")?.addEventListener("click", (e) => {
+  const tag = e.target.closest(".tag");
+  if (!tag || tag.hash !== location.hash) return;
+  e.preventDefault();
+  history.pushState(null, "", location.pathname);
+  updateRubrique();
+});
+
 overlay.addEventListener("click", (e) => {
   if (e.target.closest(".nav-link")) overlay.classList.remove("open");
 });
