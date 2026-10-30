@@ -24,13 +24,13 @@ h1 {
 
 .header-article h1 {
   width: 62.77213rem;
-  height: 55.8125rem;
+  min-height: 55.8125rem; // peut grandir si le titre est long
 }
 
 .article-info-container {
   display: flex;
   width: 21.375rem;
-  height: 55rem;
+  align-self: stretch; // suit la hauteur du titre
   padding: 1.875rem;
   flex-direction: column;
   justify-content: space-between;
@@ -70,6 +70,8 @@ h1 {
 .article-banner {
   height: 20.4375rem;
   align-self: stretch;
+  background-size: cover; // l'image s'adapte au bandeau, sans être déformée
+  background-position: center;
 }
 
 .article-banner-gino {
@@ -139,6 +141,32 @@ h1 {
   width: 36.5625rem;
 }
 
+.article-content p + p {
+  margin-top: 1em;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.card ul {
+  width: 36.5625rem;
+  padding-left: 1.2em;
+  color: var(--text);
+  font-family: "Ferro Regular I";
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.card blockquote p {
+  font-family: "Ferro Italic II";
+  font-style: italic;
+}
+
+
 #page-article-rectangle1 {
   height: 22.5rem;
   align-self: stretch;
@@ -180,7 +208,7 @@ h1 {
   }
   .header-article h1 {
     width: 100%;
-    height: auto;
+    min-height: 0;
     font-size: 6.125rem;
   }
   .article-info-container {
@@ -215,6 +243,10 @@ h1 {
   .article-content {
     font-size: 1rem;
     width: 100%;
+  }
+  .card ul {
+    width: 100%;
+    font-size: 1rem;
   }
   .card h3 {
     font-size: 1.25rem;
