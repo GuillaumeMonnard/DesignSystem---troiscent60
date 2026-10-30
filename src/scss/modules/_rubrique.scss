@@ -9,6 +9,9 @@
 }
 
 .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 4rem;
   background: var(--accent);
@@ -22,6 +25,11 @@
   font-weight: 400;
   line-height: normal;
   text-transform: none;
+}
+
+// display: contents sur .card-big-title l'emporterait sur l'attribut hidden
+.card-big-title[hidden] {
+  display: none;
 }
 
 #page-rubrique-rectangle2 {

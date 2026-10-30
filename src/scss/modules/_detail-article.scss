@@ -38,6 +38,13 @@ h1 {
   background: var(--text);
 }
 
+.article-info-top {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 1.875rem;
+}
+
 .header-article p {
   color: var(--bg);
   /* faq/text */
@@ -147,18 +154,20 @@ h1 {
     font-size: 6.125rem;
   }
   .article-info-container {
+    width: 100%;
     padding: 0.625rem;
     justify-content: start;
     align-items: start;
-    height: 5.9375rem;
+    height: auto;
     gap: 0.62rem;
   }
-  .article-hashtag,
+  .article-info-top {
+    gap: 0.62rem;
+  }
   .article-info-author {
     display: flex;
     gap: 0.625rem;
   }
-  .article-hashtag p,
   .article-info-author p {
     font-size: 1.25rem;
   }

@@ -55,11 +55,18 @@ const rubriques = {
 
 const rubriqueTitle = document.querySelector(".rubrique-title");
 
+const rubriqueArticles = document.querySelectorAll("[data-rubrique]");
+
 function updateRubrique() {
-  const rubrique = rubriques[location.hash.slice(1)];
-  if (!rubriqueTitle || !rubrique) return;
-  rubriqueTitle.textContent = rubrique;
-  document.title = rubrique;
+  if (!rubriqueTitle) return;
+  const key = location.hash.slice(1);
+  const rubrique = rubriques[key];
+  rubriqueTitle.textContent = rubrique ?? "rubriques";
+  document.title = rubrique ?? "Rubrique";
+  // sans rubrique valide dans l'URL, on affiche tous les articles
+  rubriqueArticles.forEach((article) => {
+    article.hidden = Boolean(rubrique) && article.dataset.rubrique !== key;
+  });
 }
 
 updateRubrique();
