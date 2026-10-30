@@ -1,7 +1,7 @@
 // Hovers desktop : montrent ce qui est cliquable
 // (réservés aux écrans avec souris, le survol reste bloqué sur tactile)
 
-$hover-links: "#logo", ".nav-link", ".small-title", ".big-title", ".liens a";
+$hover-links: ".nav-link", ".small-title", ".big-title", ".liens a";
 
 // images en -NB qui passent en -NF au survol
 $hover-images: "A412-1", "A412-2", "A412-3", "ACCA-1", "ACCA-2", "ACCA-3",
