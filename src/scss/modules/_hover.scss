@@ -9,19 +9,9 @@ $hover-images: "A412-1", "A412-2", "A412-3", "ACCA-1", "ACCA-2", "ACCA-3",
 
 @media (hover: hover) {
   @each $link in $hover-links {
-    #{$link} {
-      transition: color 0.5s ease;
-    }
-
     #{$link}:hover {
       color: var(--accent);
     }
-  }
-
-  .tag {
-    transition:
-      background-color 0.5s ease,
-      color 0.5s ease;
   }
 
   .tag:hover {
