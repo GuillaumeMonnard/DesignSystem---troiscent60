@@ -5,6 +5,11 @@
   gap: 0.9375rem;
 }
 
+// le lien reste l'élément placé dans le flex ou la grille
+.tag-container li {
+  display: contents;
+}
+
 .tag {
   display: flex;
   justify-content: center;
