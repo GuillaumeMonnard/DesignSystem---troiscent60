@@ -53,6 +53,27 @@
   display: none;
 }
 
+// petits écrans desktop : la carte suit sa colonne au lieu de passer sur les images
+@media (min-width: 579px) and (max-width: 1511px) {
+  .card-small-title {
+    width: 100%;
+  }
+
+  // le texte s'arrête avant de sortir du bloc et se termine par "..."
+  .card-small-title p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    line-clamp: 12;
+    overflow: hidden;
+  }
+
+  #card-small-title2 p {
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+  }
+}
+
 @media (max-width: 578px) {
   .card-small-title {
     overflow: hidden;

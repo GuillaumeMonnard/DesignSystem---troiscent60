@@ -7,7 +7,7 @@
   text-box-edge: cap alphabetic;
 
   font-family: "Druk";
-  font-size: 23.375rem;
+  font-size: min(24.5vw, 23.375rem); // réduit sur les petits écrans desktop pour rester dans sa colonne
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -38,13 +38,6 @@
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
-}
-
-// petits écrans desktop : les grands titres réduisent pour rester dans leur colonne
-@media (min-width: 579px) and (max-width: 1365px) {
-  .hero {
-    font-size: 24.5vw;
-  }
 }
 
 @media (max-width: 578px) {

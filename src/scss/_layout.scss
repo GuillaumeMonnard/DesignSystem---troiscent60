@@ -236,6 +236,14 @@
   object-fit: cover;
 }
 
+// petits écrans desktop : le bloc grandit si les titres passent sur plus de lignes
+@media (min-width: 579px) and (max-width: 1365px) {
+  .layout3-container {
+    height: auto;
+    min-height: 28.03519rem;
+  }
+}
+
 /* ==========================================================================
    7. MEDIA QUERY MOBILE
    ========================================================================== */
