@@ -45,6 +45,12 @@
     font-size: clamp(4rem, 22vw, 8.625rem);
   }
 
+  // pas de survol sur mobile : le soulignement montre que le titre est cliquable
+  .small-title,
+  .big-title {
+    text-decoration: underline;
+  }
+
   .small-title {
     font-size: 2.1875rem;
   }
