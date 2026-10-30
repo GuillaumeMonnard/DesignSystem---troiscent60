@@ -465,12 +465,13 @@
 
   /* --- Layout 5 --- */
 
+  // même écart visible partout : le gap du haut compense le padding des titres
   #layout5 {
     display: flex;
     padding: 0.4375rem 0.625rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.625rem;
+    gap: 2.125rem;
   }
 
   #layout5 .card-big-title .big-title {
@@ -490,6 +491,7 @@
   #layout5 .card-big-title-container {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
   }
 
   #layout5-rectangle1 {
