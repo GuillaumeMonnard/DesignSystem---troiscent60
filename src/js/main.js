@@ -41,3 +41,32 @@ updateButtons(mq.matches ? "dark" : "light");
 mq.addEventListener("change", (e) => {
   if (!root.dataset.theme) updateButtons(e.matches ? "dark" : "light");
 });
+
+// Page rubrique : le titre affiche la rubrique demandée dans l'URL
+// (ex. rubrique.html#economie)
+const rubriques = {
+  economie: "Economie",
+  politique: "Politique",
+  ecologie: "Ecologie",
+  culture: "Culture",
+  enquetes: "Enquetes",
+  travail: "Travail",
+};
+
+const rubriqueTitle = document.querySelector(".rubrique-title");
+
+function updateRubrique() {
+  const rubrique = rubriques[location.hash.slice(1)];
+  if (!rubriqueTitle || !rubrique) return;
+  rubriqueTitle.textContent = rubrique;
+  document.title = rubrique;
+}
+
+updateRubrique();
+
+// Clic sur une rubrique alors qu'on est déjà sur la page : pas de rechargement
+window.addEventListener("hashchange", updateRubrique);
+
+overlay.addEventListener("click", (e) => {
+  if (e.target.closest(".nav-link")) overlay.classList.remove("open");
+});
