@@ -82,7 +82,6 @@
   gap: 1.25rem;
   align-items: stretch;
 }
-// scroll que sur le reels-content?
 
 // lien autour d'une image : l'image garde sa place dans les grilles
 .img-link {
@@ -100,8 +99,6 @@
   position: relative;
 }
 
-// triche avec le max-width, faut changer ca
-
 .reel-img {
   width: 100%;
   height: 100%;
@@ -112,8 +109,6 @@
 .reel-svg {
   position: absolute;
 }
-// faire une balise img pour le -> justify-self: stretch;
-// et faire gaff les images sont full étiré;
 
 /* ==========================================================================
    4. LAYOUT 5
@@ -214,9 +209,6 @@
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
 
-  /* home/hero PEUT-ETRE A DEPLACER ETANT DONNE SON UTILISATION AUSSI DANS LA PAGE RUBRIQUE*/
-  // pas besoin de déplacer, car tout est lié dans le main normalement,
-  // à voir si ça a du sens dans la structure de fichier
   font-family: "Druk";
   font-size: 23.375rem;
   font-style: normal;
