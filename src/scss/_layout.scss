@@ -51,7 +51,6 @@
   gap: 2.8rem;
 }
 
-// lien autour d'une image : l'image garde sa place dans les grilles
 .img-link {
   display: contents;
 }
@@ -109,7 +108,7 @@
 
 #layout5-rectangle2 {
   width: 6.5rem;
-  align-self: stretch; /* au lieu de height: 61.5625rem */
+  align-self: stretch;
 }
 
 /* ==========================================================================
@@ -262,7 +261,6 @@
 
   /* --- Layout 5 --- */
 
-  // même écart visible partout : le gap du haut compense le padding des titres
   #layout5 {
     display: flex;
     padding: 0.4375rem 0.625rem;
