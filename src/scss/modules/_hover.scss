@@ -1,0 +1,26 @@
+// Hovers desktop : montrent ce qui est cliquable
+// (réservés aux écrans avec souris, le survol reste bloqué sur tactile)
+
+$hover-links: "#logo", ".nav-link", ".small-title", ".big-title", ".liens a";
+
+// images en -NB qui passent en -NF au survol
+$hover-images: "A412-1", "A412-2", "A412-3", "ACCA-1", "ACCA-2", "ACCA-3",
+  "CAE-1", "CAE-2", "CAE-3", "GINO-1", "GINO-2", "GINO-3";
+
+@media (hover: hover) {
+  @each $link in $hover-links {
+    #{$link} {
+      transition: color 0.5s ease;
+    }
+
+    #{$link}:hover {
+      color: var(--accent);
+    }
+  }
+
+  @each $image in $hover-images {
+    img[src*="#{$image}-NB"]:hover {
+      content: url("../assets/img-articles/#{$image}-NF.webp");
+    }
+  }
+}

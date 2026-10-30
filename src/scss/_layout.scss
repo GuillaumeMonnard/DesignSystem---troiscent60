@@ -84,6 +84,11 @@
 }
 // scroll que sur le reels-content?
 
+// lien autour d'une image : l'image garde sa place dans les grilles
+.img-link {
+  display: contents;
+}
+
 .reel-card {
   display: flex;
   height: 100%;
@@ -106,6 +111,7 @@
 
 .reel-svg {
   position: absolute;
+  pointer-events: none; // le clic et le survol passent à l'image en dessous
 }
 // faire une balise img pour le -> justify-self: stretch;
 // et faire gaff les images sont full étiré;
