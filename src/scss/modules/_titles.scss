@@ -40,6 +40,13 @@
   text-transform: uppercase;
 }
 
+// petits écrans desktop : les grands titres réduisent pour rester dans leur colonne
+@media (min-width: 579px) and (max-width: 1365px) {
+  .hero {
+    font-size: 24.5vw;
+  }
+}
+
 @media (max-width: 578px) {
   .hero {
     font-size: clamp(4rem, 22vw, 8.625rem);
