@@ -19,8 +19,9 @@ $hover-images: "A412-1", "A412-2", "A412-3", "ACCA-1", "ACCA-2", "ACCA-3",
     color: var(--bg);
   }
 
-  // page article : le tag est déjà sur un bloc noir, on l'inverse
-  .article-info-top .tag:hover {
+  // tag de la page article et bouton de la newsletter : déjà sur un bloc noir, on les inverse
+  .article-info-top .tag:hover,
+  .newsletter button:hover {
     background: var(--bg);
     color: var(--text);
   }

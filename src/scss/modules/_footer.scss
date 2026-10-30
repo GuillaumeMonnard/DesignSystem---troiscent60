@@ -64,6 +64,26 @@
   text-underline-position: from-font;
 }
 
+// petits écrans desktop : le logo rétrécit pour que le footer tienne dans la page
+@media (min-width: 579px) and (max-width: 1365px) {
+  .footer {
+    padding-inline: 0;
+  }
+
+  .infos-footer {
+    min-width: 0;
+  }
+
+  .logo-footer,
+  .logo-footer img {
+    width: 100%;
+  }
+
+  .logo-footer img {
+    height: auto;
+  }
+}
+
 @media (max-width: 578px) {
   .footer {
     width: 100%;
