@@ -1,3 +1,7 @@
+.rubrique-title {
+  align-self: flex-start;
+}
+
 .tag-container {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
