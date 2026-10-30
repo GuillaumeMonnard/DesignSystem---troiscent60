@@ -26,7 +26,7 @@ $hover-images: "A412-1", "A412-2", "A412-3", "ACCA-1", "ACCA-2", "ACCA-3",
   }
 
   @each $image in $hover-images {
-    img[src*="#{$image}-NB"]:hover {
+    img[src*="#{$image}-NB"]:not(.reel-img):hover {
       content: url("../assets/img-articles/#{$image}-NF.webp");
     }
   }
