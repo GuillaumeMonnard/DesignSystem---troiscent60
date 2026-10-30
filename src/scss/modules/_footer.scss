@@ -64,6 +64,17 @@
   text-underline-position: from-font;
 }
 
+.logo-footer {
+  width: 100%;
+  color: var(--text);
+}
+
+.logo-footer svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 // petits écrans desktop : le logo rétrécit pour que le footer tienne dans la page
 @media (min-width: 579px) and (max-width: 1365px) {
   .footer {
@@ -72,15 +83,6 @@
 
   .infos-footer {
     min-width: 0;
-  }
-
-  .logo-footer,
-  .logo-footer img {
-    width: 100%;
-  }
-
-  .logo-footer img {
-    height: auto;
   }
 }
 
@@ -114,11 +116,6 @@
 
   .liens a {
     font-size: 1.25rem;
-  }
-  .logo-footer img {
-    max-width: 100%;
-    height: auto;
-    max-height: none;
   }
   .infos-footer {
     width: 100%;
